@@ -1,0 +1,16 @@
+<div class="lesson-container">
+    <i class="save-icon material-icons" *ngIf="!saving">check_circle_outline</i>
+    <mat-spinner *ngIf="saving"></mat-spinner>
+    <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput value="{{lesson.title}}" [(ngModel)]="lesson.title" (keyup)="updateLesson()">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Description</mat-label>
+        <input matInput value="{{lesson.description}}" [(ngModel)]="lesson.description" (keyup)="updateLesson()">
+    </mat-form-field>
+    <mat-form-field class="text">
+        <textarea matInput value="{{lesson.text}}" [(ngModel)]="lesson.text" (keyup)="updateLesson()"></textarea>
+    </mat-form-field>
+</div>
+

@@ -1,0 +1,30 @@
+.lesson-container {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-form-field, input {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.save-icon, mat-spinner {
+    font-size: smaller;
+    width: 10px;
+    height: 10px;
+    justify-self: right;
+    align-self: right;
+    color: #000;
+}
+
+text {
+    margin: 0;
+}
+
+textarea {
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px #000;
+}

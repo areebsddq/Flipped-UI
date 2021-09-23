@@ -1,0 +1,54 @@
+.hub-container {
+    height: 100%;
+    width: 100%;
+}
+
+mat-card {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1rem; 
+}
+
+.lesson-title {
+    font-size: 1rem;
+}
+
+.drawer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 15%;
+}
+
+.hub-sidebar{
+    padding-top: 60px; 
+    padding-right: 10px;
+}
+
+mat-drawer-content {
+    padding-top: 10px; 
+    padding-left: 10px;
+}
+
+.fas {
+    display:inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.lesson-list {
+    padding-left: 10px;
+    display: block;
+}
+
+.lesson-item {
+    justify-content: stretch;
+}
+
+
+.projects-title {
+    padding-top: 330px;
+}

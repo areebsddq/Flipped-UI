@@ -1,0 +1,18 @@
+<mat-drawer-container class="hub-container" *ngIf="hub">
+    <mat-drawer class="drawer" mode="side" opened mat-display-4 >
+        <mat-card class="hub-title mat-title">{{hub.name}}</mat-card>
+        <mat-action-list class="hub-sidebar mat-typography">
+            <mat-card class="lesson-title">Lessons</mat-card>
+            <div class="lesson-list" *ngIf="lessons">
+                <lesson-item *ngFor="let lesson of lessons" [lesson]="lesson" [lessonClicked]=lessonClicked></lesson-item>
+            </div>
+            <i class="fas fa-plus" (click)="addLesson()"></i>
+        </mat-action-list>
+        <mat-card class="projects-title">Projects</mat-card>
+        <mat-card class="discussion-title">Discussion</mat-card>
+    </mat-drawer>
+    <mat-drawer-content *ngIf="lessons">
+        <hub-default-page *ngIf="!isLessonOpen" [lessons]="lessons" [lessonClicked]=lessonClicked></hub-default-page>
+        <hub-lesson-page *ngIf="isLessonOpen" [lesson]="currentLesson"></hub-lesson-page>
+    </mat-drawer-content>
+  </mat-drawer-container>

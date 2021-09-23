@@ -1,0 +1,10 @@
+<div class="lesson-container">
+    <mat-action-list>
+        <mat-card *ngFor="let lesson of lessons" class="lesson-card" (click)="onClick(lesson)">
+            <div *ngIf="lesson">
+                <mat-card-title class="mat-title">{{lesson.title}}</mat-card-title>
+                <mat-card-subtitle>{{lesson.description}}</mat-card-subtitle>
+            </div>
+        </mat-card>
+    </mat-action-list>
+</div>
