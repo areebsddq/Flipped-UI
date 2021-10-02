@@ -38,7 +38,7 @@ export class HubComponent implements OnInit {
 
   addLesson(): void {
     var lesson = new Lesson({
-      name: "New Lesson!", 
+      title: "New Lesson!", 
       description: "Write a description of your lesson here.",
       hubId: 1
     });

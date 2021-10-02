@@ -44,11 +44,8 @@ export class HubsService {
 
   public createLesson(lesson: Lesson)
   {
-    return this.httpClient.post<Lesson>("http://localhost:5000/api/hub/lesson/", lesson, {
-      headers : {
-          'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-      }
-    });
+    console.log(lesson);
+    return this.httpClient.post<Lesson>("http://localhost:5000/api/hub/lesson/", lesson);
   }
 
   public updateLesson(lesson: Lesson)
