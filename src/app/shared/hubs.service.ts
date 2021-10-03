@@ -14,12 +14,21 @@ export class HubsService {
 
   public getHubs ()
   {
-      return this.httpClient.get<Hub[]>("http://localhost:5000/api/hub/");
+    var hubs = [];
+
+    for(var i = 0; i < 10; i++)
+    {
+      var h = new Hub ({id: 1, name: 'TestHub ' + i, creatorId: 0});
+
+      hubs.push(h);
+    }
+
+    return hubs;
   }
 
   public getHub (hubId: number)
   {
-      return this.httpClient.get<Hub>("http://localhost:5000/api/hub/1")
+    return new Hub ({id: 1, name: 'TestHub', creatorId: 0});
   }
 
   public createHub(hub: Hub) 

@@ -23,7 +23,7 @@ export class HubComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.hubService.getHub(1).subscribe(h => this.hub = h);
+    //this.hubService.getHub(1).subscribe(h => this.hub = h);
 
     this.hubService.getLessons(1).subscribe(lst => {
       this.lessons = lst;
