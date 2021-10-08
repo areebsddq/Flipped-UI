@@ -4,10 +4,12 @@
 .btn{
     background-color:#39CAA9;
     border: none;
+    margin: 3% 0;
 }
 
 h1{
     font-size: 54px;
+    margin-bottom: 2%;
 }
 
 h3{
@@ -18,9 +20,26 @@ p{
     font-family: 'AbeeZee';
 }
 
-.hero, .features, .allhubs, .about{
+.btn{
+    font-family: 'Space Mono', monospace;
+}
+
+.hero{
+    margin: 3% 5%;
+    padding: 3% 10%;
+}
+
+.features, .allhubs, .about, .widgets {
     margin: 15% 5%;
     padding: 3% 10%;
+}
+.footer{
+    padding: 3% 15%;
+    margin: 10% 5%;
+}
+
+.color-change{
+    color:#39CAA9;
 }
 
 /* Nav */
@@ -33,15 +52,31 @@ p{
     font-size: 2.1rem;
     font-weight: bold;
 }
-#color-change{
-    color:#39CAA9;
+
+.flipped-icon{
+    position: absolute;
+    left: 100px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    width: 110px;
+    height: 150px;
+
 }
+
 
 .container-fluid{
     padding: 1% 0%;
 }
 
 /* Hero */
+
+.hero-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* Features */
 .features-title{
@@ -50,4 +85,23 @@ p{
 
 .card{
     border-radius: 25px;
+}
+
+/* About */
+.astronout-img{
+    width: 250px;
+    height: 300px;
+}
+.about-info{
+    letter-spacing: 1%;
+}
+.about-h1{
+    line-height: 54px;
+}
+
+
+/* Footer */
+
+.footnote{
+    padding: 0% 3%;
 }
