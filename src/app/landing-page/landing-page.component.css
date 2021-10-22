@@ -1,6 +1,11 @@
 .page{
     background-color: #F9F9F9;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 .btn{
     background-color:#39CAA9;
     border: none;
@@ -8,16 +13,26 @@
 }
 
 h1{
-    font-size: 54px;
+    font-family: 'Monteserrat Semi-bold 600', 'Open Sans', sans-serif;
+    font-size: 58px;
     margin-bottom: 2%;
+    line-height: 120%;
 }
 
 h3{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Lekton', monospace;
 }
 p{
     font-size: 16px;
     font-family: 'AbeeZee';
+}
+
+a{
+    color: #737373;
+}
+
+i{
+    font-size: 1.5rem;
 }
 
 .btn{
@@ -29,9 +44,12 @@ p{
     padding: 3% 10%;
 }
 
-.features, .allhubs, .about, .widgets {
+.features, .allhubs {
     margin: 15% 5%;
     padding: 3% 10%;
+}
+.about{
+    margin: 3% 15%;
 }
 .footer{
     padding: 3% 15%;
@@ -44,7 +62,7 @@ p{
 
 /* Nav */
 .navbar{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Lekton', monospace;
     margin: 0 20px 0px 20px;
 }
 
@@ -78,9 +96,14 @@ p{
   width: 50%;
 }
 
+.hero-title{
+    padding-bottom: 2%;
+    font-size: 82px;
+}
+
 /* Features */
-.features-title{
-    padding: 1rem;
+.features-title, .features-description{
+    padding: 2%;
 }
 
 .card{
@@ -89,8 +112,8 @@ p{
 
 /* About */
 .astronout-img{
-    width: 250px;
-    height: 300px;
+    width: 210px;
+    height: 250px;
 }
 .about-info{
     letter-spacing: 1%;
@@ -101,7 +124,10 @@ p{
 
 
 /* Footer */
-
+.footer-title, .footer-description{
+    padding-bottom: 2%;
+}
 .footnote{
     padding: 0% 3%;
 }
+
