@@ -1,4 +1,12 @@
-# FlippedUI
+# Flipped
+
+We are creating an open-source learning platform for people to learn from each other. We like to say sort of a Learning Management System for Self-Learners.
+
+Our dystopian educational system is a place where there is only a few sources of knowledge centralised to only a few people to learn from, and that learning doesn't translate into real value for humanity. That is why with Flipped, our big picture is about doing the complete opposite: revitalising learning by letting individuals guide their learning with curiosity and passion, democratising access to learning resources to everyone with open source values, and helping people learn in order to create real value through collaborative projects. We are inspired by connectivist thinkers and social learning theories. 
+
+Harnessing the power of online communities, that already has broken so many barriers and created so many powerful resources, we are now in the perfect position to innovate learning for EVERYONE. We can make learning accessible, full of quality materials and give the power to the learner.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
